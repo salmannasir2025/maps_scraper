@@ -65,7 +65,7 @@ This application has been developed to run natively in local Linux environments 
 
 ### 1. Project Directory Slide
 ```bash
-cd /home/salman/Documents/projects/maps_scrapper
+cd /home/user/Documents/projects/maps_scrapper
 ```
 
 ### 2. Launch the Application Interface
