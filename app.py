@@ -165,7 +165,7 @@ with tab1:
         else:
             st.warning("Please configure **Keyword** in the sidebar and enter/upload **Cities** to get started.")
 
-    st.markdown("<br>", unsafe_style_allowed=True)
+    st.markdown("<br>", unsafe_allow_html=True)
     
     # Session State Initialization
     if "leads_df" not in st.session_state:
