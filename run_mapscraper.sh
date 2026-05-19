@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Absolute paths configuration
+# Dynamic absolute paths configuration
 PROJECT_DIR="$HOME/Documents/projects/maps_scrapper"
 VENV_STREAMLIT="$PROJECT_DIR/venv/bin/streamlit"
 APP_SCRIPT="$PROJECT_DIR/app.py"
