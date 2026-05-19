@@ -88,13 +88,21 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Application Header & Hero Banner
+import os
+
+# Application Header & Hero Banner
 col_title, col_logo = st.columns([4, 1])
 with col_title:
     st.title("🗺️ MapScraper Pro")
     st.caption("Local, Privacy-Focused Google Maps B2B Lead Generator — 100% Free & Unlimited")
 with col_logo:
-    st.markdown("<br>", unsafe_allow_html=True)
-    st.write("")
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    logo_path = os.path.join(script_dir, "logo1.png")
+    if os.path.exists(logo_path):
+        st.image(logo_path, use_container_width=True)
+    else:
+        st.markdown("<br>", unsafe_allow_html=True)
+        st.write("")
 
 st.divider()
 
