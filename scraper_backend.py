@@ -250,6 +250,19 @@ def scrape_google_maps(keyword, city, state, country, limit=10, phone_only=False
             except Exception as e:
                 logger.error(f"Error closing driver: {e}")
 
+def clean_element_text(text):
+    """
+    Removes hidden vector icons, menu keywords, and unreadable leading 
+    characters extracted from Google Maps panel elements.
+    """
+    if not text:
+        return ""
+    # Strip known Google structural action phrases
+    text = text.replace("قائمة الطعام", "").replace("Menu", "")
+    # Remove non-ascii UI symbol artifacts 
+    text = re.sub(r'[^\x20-\x7E\u00A0-\u017F]', '', text)
+    return text.strip(" ,،\n")
+
 def extract_single_business_details(driver):
     """
     Extracts all fields for the currently loaded business details panel.
@@ -318,29 +331,32 @@ def extract_single_business_details(driver):
         # Website
         website = ""
         try:
+            # First, check the clean web tracking container
             web_el = driver.find_element(By.CSS_SELECTOR, "a[data-item-id='authority']")
             website = web_el.get_attribute("href")
         except Exception:
             try:
-                web_el = driver.find_element(By.XPATH, "//a[contains(@data-item-id,'authority')]")
-                website = web_el.get_attribute("href")
+                # Fallback to any valid external link inside the action panel
+                web_els = driver.find_elements(By.CSS_SELECTOR, "a[aria-label*='Website'], a[aria-label*='website']")
+                for el in web_els:
+                    href = el.get_attribute("href")
+                    if href and "google.com" not in href:
+                        website = href
+                        break
             except Exception:
                 pass
                 
-        if website:
-            # Strip tracker parameters if any
-            parsed_web = urllib.parse.urlparse(website)
-            # Remove google redirections
-            if "google.com" in parsed_web.netloc and "/url" in parsed_web.path:
+        # Clean up any lingering tracking parameters or search routing strings
+        if website and ("google.com/url" in website or "googleusercontent" in website):
+            try:
+                parsed_web = urllib.parse.urlparse(website)
                 queries = urllib.parse.parse_qs(parsed_web.query)
                 if "q" in queries:
                     website = queries["q"][0]
                 elif "url" in queries:
                     website = queries["url"][0]
-            
-            # Final clean
-            parsed_clean = urllib.parse.urlparse(website)
-            website = f"{parsed_clean.scheme}://{parsed_clean.netloc}{parsed_clean.path}"
+            except Exception:
+                pass
             
         # Rating
         rating = ""
@@ -357,13 +373,13 @@ def extract_single_business_details(driver):
             pass
 
         return {
-            "name": title,
-            "category": category,
-            "address": address,
-            "phone": phone,
-            "website": website,
-            "rating": rating,
-            "reviews_count": reviews_count,
+            "name": clean_element_text(title),
+            "category": clean_element_text(category),
+            "address": clean_element_text(address),
+            "phone": clean_element_text(phone),
+            "website": website.strip() if website else "",
+            "rating": rating.strip() if rating else "",
+            "reviews_count": reviews_count.strip() if reviews_count else "",
             "maps_url": driver.current_url
         }
     except Exception as e:
