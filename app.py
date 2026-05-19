@@ -121,6 +121,9 @@ with st.sidebar:
     website_only = st.checkbox("Require Website Link", value=False, help="Filter out businesses without website listings.")
     email_enrich = st.checkbox("Enrich Email Address 📧", value=True, 
                               help="If a website is found, crawl the homepage to extract contact email addresses.")
+    
+    st.markdown("---")
+    start_btn = st.button("🔥 Start Lead Generation Campaign", use_container_width=True, type="primary")
 
 # Main Layout
 tab1, tab2 = st.tabs(["🚀 Lead Extraction", "📚 How to Use & Privacy"])
@@ -173,8 +176,7 @@ with tab1:
     if "log_text" not in st.session_state:
         st.session_state.log_text = ""
         
-    # Start Scraping Button
-    start_btn = st.button("🔥 Start Lead Generation Campaign", use_container_width=True, type="primary")
+    # Campaign is initiated via the sidebar menu button
     
     if start_btn:
         # Input Validation
