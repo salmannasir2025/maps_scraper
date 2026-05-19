@@ -1,0 +1,31 @@
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Logs & Temporaries
+*.log
+/tmp/
+mapscraper_runner.log
+streamlit_maps_scrapper.log
+
+# Webdriver Manager & WebDriver Caching
+.wdm/
+
+# Developer / System Files
+.DS_Store
+.qodo/
+.vscode/
+.idea/
+
+# Local Scratch Test Files
+scratch/
+test_scraper.py
