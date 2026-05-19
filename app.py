@@ -85,7 +85,7 @@ st.markdown("""
         margin-top: 50px;
     }
 </style>
-""", unsafe_style_allowed=True)
+""", unsafe_allow_html=True)
 
 # Application Header & Hero Banner
 col_title, col_logo = st.columns([4, 1])
@@ -93,7 +93,7 @@ with col_title:
     st.title("🗺️ MapScraper Pro")
     st.caption("Local, Privacy-Focused Google Maps B2B Lead Generator — 100% Free & Unlimited")
 with col_logo:
-    st.markdown("<br>", unsafe_style_allowed=True)
+    st.markdown("<br>", unsafe_allow_html=True)
     st.write("")
 
 st.divider()
@@ -315,15 +315,15 @@ with tab1:
         col_m1, col_m2, col_m3, col_m4 = st.columns(4)
         
         with col_m1:
-            st.markdown(f'<div class="metric-card"><div class="metric-value">{total_leads}</div><div class="metric-label">Total Unique Leads</div></div>', unsafe_style_allowed=True)
+            st.markdown(f'<div class="metric-card"><div class="metric-value">{total_leads}</div><div class="metric-label">Total Unique Leads</div></div>', unsafe_allow_html=True)
         with col_m2:
-            st.markdown(f'<div class="metric-card"><div class="metric-value">{phone_count}</div><div class="metric-label">With Phone Numbers</div></div>', unsafe_style_allowed=True)
+            st.markdown(f'<div class="metric-card"><div class="metric-value">{phone_count}</div><div class="metric-label">With Phone Numbers</div></div>', unsafe_allow_html=True)
         with col_m3:
-            st.markdown(f'<div class="metric-card"><div class="metric-value">{website_count}</div><div class="metric-label">With Website Link</div></div>', unsafe_style_allowed=True)
+            st.markdown(f'<div class="metric-card"><div class="metric-value">{website_count}</div><div class="metric-label">With Website Link</div></div>', unsafe_allow_html=True)
         with col_m4:
-            st.markdown(f'<div class="metric-card"><div class="metric-value">{email_count}</div><div class="metric-label">With Emails Enriched</div></div>', unsafe_style_allowed=True)
+            st.markdown(f'<div class="metric-card"><div class="metric-value">{email_count}</div><div class="metric-label">With Emails Enriched</div></div>', unsafe_allow_html=True)
             
-        st.markdown("<br>", unsafe_style_allowed=True)
+        st.markdown("<br>", unsafe_allow_html=True)
         st.markdown("### 📋 Generated Leads Database")
         
         # Display Interactive Dataframe
@@ -367,4 +367,4 @@ with tab2:
     - **Gentle Crawler Configuration**: The application incorporates built-in wait delays between pages and steps to stay undetected and comply with standard browser limits.
     """)
 
-st.markdown('<div class="footer-text">MapScraper Pro v1.0.0 • Built for High Performance B2B Lead Generation</div>', unsafe_style_allowed=True)
+st.markdown('<div class="footer-text">MapScraper Pro v1.0.0 • Built for High Performance B2B Lead Generation</div>', unsafe_allow_html=True)
