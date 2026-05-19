@@ -88,3 +88,13 @@ This repository represents high-level engineering capabilities in:
 - Clean corporate web tool visual designs
 
 *For security and privacy, local caching directories (`.wdm/`, `__pycache__/`), temporary developer scratch scripts, and virtual environment folders have been excluded.*
+
+---
+
+## ⚖️ Dual Licensing Terms
+
+This project is dual-licensed to protect commercial intellectual property while supporting personal development:
+- **Personal & Non-Commercial Use:** Granted freely under the terms of the standard **MIT License**.
+- **Commercial Use:** Any commercial deployment, B2B lead harvesting, corporate sales outreach, or SaaS integrations requires explicit, prior written authorization from **ABT PLUS LLC (Automated Business Technologies)**.
+
+For inquiries regarding corporate usage waivers, partnership agreements, or commercial licensing, please reach out to **licensing@abtplus.com**.
