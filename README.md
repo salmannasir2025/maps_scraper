@@ -91,10 +91,10 @@ This repository represents high-level engineering capabilities in:
 
 ---
 
-## ⚖️ Dual Licensing Terms
+## ⚖️ Open-Source Academic Licensing & Disclaimer
 
-This project is dual-licensed to protect commercial intellectual property while supporting personal development:
-- **Personal & Non-Commercial Use:** Granted freely under the terms of the standard **MIT License**.
-- **Commercial Use:** Any commercial deployment, B2B lead harvesting, corporate sales outreach, or SaaS integrations requires explicit, prior written authorization from **ABT PLUS LLC (Automated Business Technologies)**.
+This project is open-sourced under the terms of the standard **MIT License**. It is an architectural Proof of Concept (PoC) engineered strictly for local automation sandbox testing, educational research, and technical study.
 
-For inquiries regarding corporate usage waivers, partnership agreements, or commercial licensing, please reach out to **licensing@abtplus.com**.
+* **Developer & Corporate Immunity:** This software is provided "as is", without warranty of any kind. ABT PLUS LLC (Automated Business Technologies) assumes zero liability or tracking responsibility for how third-party actors configure, clone, or deploy this open-source script.
+* **Compliance Boundary:** Users bear sole individual responsibility for ensuring that their execution parameters and location lists comply with local data privacy frameworks (GDPR, CCPA) and target infrastructure Terms of Service (ToS).
+* **Enterprise Production Alternatives:** For commercial-scale data pipelines, high-volume operations, or automated corporate workflows, organizations are strongly encouraged to utilize official structured channels, such as the Google Places API gateway.

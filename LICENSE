@@ -1,39 +1,21 @@
-# MapScraper Pro Dual License Agreement
+MIT License
 
-Copyright (c) 2026 ABT PLUS LLC (Automated Business Technologies). All rights reserved.
+Copyright (c) 2026 ABT PLUS LLC / Salman Nasir
 
-This software is dual-licensed under the terms described below. By downloading, copying, installing, running, or otherwise using this software, you agree to be bound by these licensing terms.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
----
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-## 1. Personal & Non-Commercial Use (MIT License)
-
-For individuals using this software for private study, non-profit academic research, or purely personal, non-commercial experiments, the software is licensed under the standard MIT License parameters:
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
----
-
-## 2. Commercial Use Restriction (Explicit Permission Required)
-
-ANY use of this software, or any portion thereof, for commercial purposes, including but not limited to:
-- Generating business leads for sales development, corporate outreach, or cold acquisition campaigns.
-- Integrating this codebase, scraping pipeline, or extraction logic into commercial software products, subscription platforms (SaaS), or internal corporate tooling.
-- Reselling, renting, or leasing the business data compiled by this software for monetary gain.
-
-**Requires explicit, written prior authorization or a commercial license agreement from ABT PLUS LLC (Automated Business Technologies).**
-
-### How to Request Commercial Authorization
-To acquire a corporate usage waiver, partnership agreement, or standard commercial license, please contact the licensing desk at:
-- **Licensor:** ABT PLUS LLC (Automated Business Technologies)
-- **Contact Channel:** licensing@abtplus.com (or your primary corporate contact desk)
-
----
-
-## 3. Enforcement & Violations
-
-Unauthorized commercial deployment or distribution of this software constitutes copyright infringement and a breach of this license agreement. ABT PLUS LLC reserves all rights to seek legal remedies, including statutory damages and injunctive relief, for violations of these terms.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
