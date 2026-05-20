@@ -92,12 +92,9 @@ This repository represents high-level engineering capabilities in:
 ---
 
 ## ⚖️ Open-Source Academic Licensing & Disclaimer
-
-This project is open-sourced under the terms of the standard **MIT License**. It is an architectural Proof of Concept (PoC) engineered strictly for local automation sandbox testing, educational research, and technical study.
-
-* **Developer & Corporate Immunity:** This software is provided "as is", without warranty of any kind. ABT PLUS LLC (Automated Business Technologies) assumes zero liability or tracking responsibility for how third-party actors configure, clone, or deploy this open-source script.
-* **Compliance Boundary:** Users bear sole individual responsibility for ensuring that their execution parameters and location lists comply with local data privacy frameworks (GDPR, CCPA) and target infrastructure Terms of Service (ToS).
-* **Enterprise Production Alternatives:** For commercial-scale data pipelines, high-volume operations, or automated corporate workflows, organizations are strongly encouraged to utilize official structured channels, such as the Google Places API gateway.
+This project is open-sourced under the terms of the standard **MIT License**. It is an architectural Proof of Concept (PoC) engineered strictly for local environment evaluation, educational research, and technical sandbox testing.
+* **Operational Immunity:** This software is provided "as is", without warranty of any kind. ABT PLUS LLC (Automated Business Technologies) assumes zero liability, tracking obligation, or financial tracing responsibility for how third-party actors configure, clone, or deploy this script framework.
+* **Compliance Boundary:** Users bear sole individual responsibility for ensuring that all data extraction loops, automation streams, or third-party API keys (e.g., Twilio, Deepgram, Gemini) linked to this code comply with regional laws (GDPR, CCPA), telecom carrier standards, and target infrastructure Terms of Service (ToS).
 
 ---
 
