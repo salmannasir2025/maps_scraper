@@ -29,3 +29,16 @@ streamlit_maps_scrapper.log
 # Local Scratch Test Files
 scratch/
 test_scraper.py
+
+# --- Compliance Security Sweep Patterns ---
+.env
+*.env
+.env.*
+config.json
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+*.pyo
