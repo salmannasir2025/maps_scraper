@@ -98,3 +98,14 @@ This project is open-sourced under the terms of the standard **MIT License**. It
 * **Developer & Corporate Immunity:** This software is provided "as is", without warranty of any kind. ABT PLUS LLC (Automated Business Technologies) assumes zero liability or tracking responsibility for how third-party actors configure, clone, or deploy this open-source script.
 * **Compliance Boundary:** Users bear sole individual responsibility for ensuring that their execution parameters and location lists comply with local data privacy frameworks (GDPR, CCPA) and target infrastructure Terms of Service (ToS).
 * **Enterprise Production Alternatives:** For commercial-scale data pipelines, high-volume operations, or automated corporate workflows, organizations are strongly encouraged to utilize official structured channels, such as the Google Places API gateway.
+
+---
+
+## 📬 Contact & Corporate Information
+| | |
+| --- | --- |
+| **Organization** | ABT PLUS LLC (Automated Business Technologies) |
+| **Website** | [www.abtplusllc.com](https://www.abtplusllc.com) |
+| **Support** | [support@abtplusllc.com](mailto:support@abtplusllc.com) |
+| **License** | MIT — Open Source |
+
